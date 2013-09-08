@@ -67,33 +67,9 @@
             UIImageView *indicator = [indicators objectAtIndex:i];
             indicator.alpha = 1;
         }
-//        _runloopConsilieri = [CADisplayLink displayLinkWithTarget:self selector:@selector(checkPosition)];
-//        [_runloopConsilieri addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         
     }
     return self;
-}
-
-- (void)checkPosition {
-    if (self.frame.origin.y > kMAXY) {
-        _runloopConsilieri.paused = YES;
-        [_runloopConsilieri invalidate];
-        
-        switch (_type) {
-            case DirectionViewLeft:
-                [[Buzzer current] buzzForLeft];
-                break;
-            case DirectionViewStraight:
-                [[Buzzer current] buzzForStraight];
-                break;
-            case DirectionViewRight:
-                [[Buzzer current] buzzForRight];
-                break;
-            case DirectionViewArrived:
-                [[Buzzer current] buzzForArrived];
-                break;
-        }
-    }
 }
 
 - (void)broadCast {

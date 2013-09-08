@@ -44,7 +44,7 @@
 }
 
 - (void)buzzWithIncrement {
-    _timer = [NSTimer scheduledTimerWithTimeInterval:.5 target:self selector:@selector(buzz) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:.8 target:self selector:@selector(buzz) userInfo:nil repeats:YES];
 }
 
 - (void)buzz {
@@ -65,7 +65,7 @@
 }
 
 - (void)buzzForArrived {
-    _maxTime = 5;
+    _maxTime = 10;
     [self buzzWithIncrement];
 }
 

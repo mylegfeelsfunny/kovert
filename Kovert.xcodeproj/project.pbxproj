@@ -28,6 +28,10 @@
 		D255BEA717DBFE4C008573B3 /* path-line.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA117DBFE4C008573B3 /* path-line.png */; };
 		D255BEA817DBFE4C008573B3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA217DBFE4C008573B3 /* right.png */; };
 		D255BEAB17DC0480008573B3 /* DirectionContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BEAA17DC0480008573B3 /* DirectionContainerView.m */; };
+		D255BEAD17DC13E3008573B3 /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEAC17DC13E3008573B3 /* you.png */; };
+		D255BEB017DC151A008573B3 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BEAF17DC151A008573B3 /* LandingViewController.m */; };
+		D255BEB217DC16A9008573B3 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEB117DC16A8008573B3 /* cancel.png */; };
+		D255BEB417DC1834008573B3 /* destination_words.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEB317DC1834008573B3 /* destination_words.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,11 @@
 		D255BEA217DBFE4C008573B3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		D255BEA917DC0480008573B3 /* DirectionContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionContainerView.h; sourceTree = "<group>"; };
 		D255BEAA17DC0480008573B3 /* DirectionContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionContainerView.m; sourceTree = "<group>"; };
+		D255BEAC17DC13E3008573B3 /* you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you.png; sourceTree = "<group>"; };
+		D255BEAE17DC151A008573B3 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		D255BEAF17DC151A008573B3 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		D255BEB117DC16A8008573B3 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		D255BEB317DC1834008573B3 /* destination_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination_words.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,8 @@
 				D255BE5317DBEE43008573B3 /* AppDelegate.m */,
 				D255BE5B17DBEE43008573B3 /* KovertViewController.h */,
 				D255BE5C17DBEE43008573B3 /* KovertViewController.m */,
+				D255BEAE17DC151A008573B3 /* LandingViewController.h */,
+				D255BEAF17DC151A008573B3 /* LandingViewController.m */,
 				D255BE6917DBF18D008573B3 /* Buzzer.h */,
 				D255BE6A17DBF18D008573B3 /* Buzzer.m */,
 				D255BE6C17DBF756008573B3 /* DirectionView.h */,
@@ -153,6 +164,9 @@
 		D255BE9C17DBFE4C008573B3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D255BEB317DC1834008573B3 /* destination_words.png */,
+				D255BEB117DC16A8008573B3 /* cancel.png */,
+				D255BEAC17DC13E3008573B3 /* you.png */,
 				D255BE9D17DBFE4C008573B3 /* beat-indicator.png */,
 				D255BE9E17DBFE4C008573B3 /* destination.png */,
 				D255BE9F17DBFE4C008573B3 /* forward.png */,
@@ -224,6 +238,9 @@
 				D255BEA617DBFE4C008573B3 /* left.png in Resources */,
 				D255BEA717DBFE4C008573B3 /* path-line.png in Resources */,
 				D255BEA817DBFE4C008573B3 /* right.png in Resources */,
+				D255BEAD17DC13E3008573B3 /* you.png in Resources */,
+				D255BEB217DC16A9008573B3 /* cancel.png in Resources */,
+				D255BEB417DC1834008573B3 /* destination_words.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 				D255BE6B17DBF18D008573B3 /* Buzzer.m in Sources */,
 				D255BE6E17DBF756008573B3 /* DirectionView.m in Sources */,
 				D255BEAB17DC0480008573B3 /* DirectionContainerView.m in Sources */,
+				D255BEB017DC151A008573B3 /* LandingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

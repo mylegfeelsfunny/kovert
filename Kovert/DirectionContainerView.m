@@ -49,7 +49,7 @@
         
         _blockHeight = ([DirectionView height] + 10) + (b.frame.size.height + 10);
         
-        self.frame = CGRectMake(self.frame.origin.x,self.frame.origin.y,self.frame.size.width, 400-y);
+        self.frame = CGRectMake(self.frame.origin.x,self.frame.origin.y,self.frame.size.width, 360-y);
     }
     return self;
 }
@@ -60,7 +60,7 @@
     }
     
     [UIView animateWithDuration:6
-                          delay:2.0
+                          delay:3.0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          self.frame = CGRectMake(self.frame.origin.x,
