@@ -15,11 +15,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[LandingViewController alloc] init];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
     
+    LandingViewController *viewController = [[LandingViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    navigationController.navigationBarHidden = YES;
+    
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
 
     return YES;
 }

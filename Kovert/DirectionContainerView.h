@@ -10,8 +10,10 @@
 
 @interface DirectionContainerView : UIView
 
++ (UIImageView *)buffer:(NSInteger)y;
+
 - (id)initWithFrame:(CGRect)frame andArray:(NSArray *)array;
 - (void)increment;
-+ (UIImageView *)buffer:(NSInteger)y;
+- (void)kill;
 
 @end

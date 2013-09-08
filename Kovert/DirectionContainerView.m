@@ -8,11 +8,15 @@
 
 #import "DirectionContainerView.h"
 #import "DirectionView.h"
+#import "Globals.h"
+#import <QuartzCore/QuartzCore.h>
+
 @interface DirectionContainerView () {
     @private
     NSInteger _currentIndex;
     NSArray *_indicatorsArray;
     NSInteger _blockHeight;
+    BOOL _first;
 }
 
 @end
@@ -28,6 +32,7 @@
 - (id)initWithFrame:(CGRect)frame andArray:(NSArray *)array {
     self = [super initWithFrame:frame];
     if (self) {
+        _first = YES;
         NSMutableArray *indicatorsArray = [[NSMutableArray alloc] init];
         DirectionView *directionView;
         NSInteger y = 0;
@@ -49,7 +54,8 @@
         
         _blockHeight = ([DirectionView height] + 10) + (b.frame.size.height + 10);
         
-        self.frame = CGRectMake(self.frame.origin.x,self.frame.origin.y,self.frame.size.width, 360-y);
+        NSInteger offsetY =(IS_IPHONE_5) ? 360 : 300;
+        self.frame = CGRectMake(self.frame.origin.x,self.frame.origin.y,self.frame.size.width, offsetY-y);
     }
     return self;
 }
@@ -58,9 +64,10 @@
     if (_currentIndex > [_indicatorsArray count]-1) {
         return;
     }
-    
+    CGFloat delay =(_first) ? 0.f : 3.f;
+    _first = NO;
     [UIView animateWithDuration:6
-                          delay:3.0
+                          delay:delay
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          self.frame = CGRectMake(self.frame.origin.x,
@@ -74,6 +81,15 @@
                          _currentIndex++;
                          [self increment];
                      }];
+
+}
+
+- (void)kill{
+    _indicatorsArray = nil;
+    _currentIndex = 0;
+    for (CALayer* layer in [self.layer sublayers]) {
+        [layer removeAllAnimations];
+    }
 
 }
 @end

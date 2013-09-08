@@ -12,9 +12,11 @@
 #import "DirectionView.h"
 #import "DirectionContainerView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Globals.h"
 
 @interface KovertViewController () {
-
+    @private
+    DirectionContainerView *_directionContainerView;
 }
 
 @end
@@ -55,13 +57,14 @@
                       
                       , nil];
     
-    DirectionContainerView *dc = [[DirectionContainerView alloc] initWithFrame:CGRectMake(180, 0, 0, [DirectionView height])
-                                                                      andArray:indicatorArray];
-    [self.view addSubview:dc];
+    _directionContainerView = [[DirectionContainerView alloc] initWithFrame:CGRectMake(180, 0, 0, [DirectionView height])
+                                                                   andArray:indicatorArray];
+    [self.view addSubview:_directionContainerView];
     
+    NSInteger offsetY =(IS_IPHONE_5) ? 160 : 130;
     CALayer *blackTop                           = [CALayer layer];
     blackTop.backgroundColor                    = [UIColor colorWithRed:0.f green:0.f blue:0.f alpha:.8f].CGColor;
-    blackTop.frame                              = CGRectMake(0, self.view.frame.size.height - 160, 320, 160);
+    blackTop.frame                              = CGRectMake(0, self.view.frame.size.height - offsetY, 320, offsetY);
     [self.view.layer addSublayer:blackTop];
     
     CALayer *whiteLine                           = [CALayer layer];
@@ -83,7 +86,7 @@
     [cancelButton addTarget:self action:@selector(popViewController:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cancelButton];
 
-    [dc increment];
+    [_directionContainerView increment];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,6 +95,8 @@
 }
 
 - (void)popViewController:(id)sender {
+    [_directionContainerView kill];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 
