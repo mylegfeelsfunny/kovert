@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D255BE4417DBEE43008573B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D255BE4317DBEE43008573B3 /* UIKit.framework */; };
+		D255BE4617DBEE43008573B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D255BE4517DBEE43008573B3 /* Foundation.framework */; };
+		D255BE4817DBEE43008573B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D255BE4717DBEE43008573B3 /* CoreGraphics.framework */; };
+		D255BE4E17DBEE43008573B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D255BE4C17DBEE43008573B3 /* InfoPlist.strings */; };
+		D255BE5017DBEE43008573B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BE4F17DBEE43008573B3 /* main.m */; };
+		D255BE5417DBEE43008573B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BE5317DBEE43008573B3 /* AppDelegate.m */; };
+		D255BE5617DBEE43008573B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE5517DBEE43008573B3 /* Default.png */; };
+		D255BE5817DBEE43008573B3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE5717DBEE43008573B3 /* Default@2x.png */; };
+		D255BE5A17DBEE43008573B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE5917DBEE43008573B3 /* Default-568h@2x.png */; };
+		D255BE5D17DBEE43008573B3 /* KovertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BE5C17DBEE43008573B3 /* KovertViewController.m */; };
+		D255BE6717DBEF31008573B3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D255BE6617DBEF31008573B3 /* AudioToolbox.framework */; };
+		D255BE6B17DBF18D008573B3 /* Buzzer.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BE6A17DBF18D008573B3 /* Buzzer.m */; };
+		D255BE6E17DBF756008573B3 /* DirectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BE6D17DBF756008573B3 /* DirectionView.m */; };
+		D255BE9A17DBFDA4008573B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D255BE9917DBFDA4008573B3 /* QuartzCore.framework */; };
+		D255BEA317DBFE4C008573B3 /* beat-indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE9D17DBFE4C008573B3 /* beat-indicator.png */; };
+		D255BEA417DBFE4C008573B3 /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE9E17DBFE4C008573B3 /* destination.png */; };
+		D255BEA517DBFE4C008573B3 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BE9F17DBFE4C008573B3 /* forward.png */; };
+		D255BEA617DBFE4C008573B3 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA017DBFE4C008573B3 /* left.png */; };
+		D255BEA717DBFE4C008573B3 /* path-line.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA117DBFE4C008573B3 /* path-line.png */; };
+		D255BEA817DBFE4C008573B3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA217DBFE4C008573B3 /* right.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D255BE4017DBEE43008573B3 /* Kovert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kovert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D255BE4317DBEE43008573B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D255BE4517DBEE43008573B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D255BE4717DBEE43008573B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D255BE4B17DBEE43008573B3 /* Kovert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kovert-Info.plist"; sourceTree = "<group>"; };
+		D255BE4D17DBEE43008573B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D255BE4F17DBEE43008573B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D255BE5117DBEE43008573B3 /* Kovert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kovert-Prefix.pch"; sourceTree = "<group>"; };
+		D255BE5217DBEE43008573B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D255BE5317DBEE43008573B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D255BE5517DBEE43008573B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D255BE5717DBEE43008573B3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D255BE5917DBEE43008573B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D255BE5B17DBEE43008573B3 /* KovertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KovertViewController.h; sourceTree = "<group>"; };
+		D255BE5C17DBEE43008573B3 /* KovertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KovertViewController.m; sourceTree = "<group>"; };
+		D255BE6617DBEF31008573B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D255BE6917DBF18D008573B3 /* Buzzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buzzer.h; sourceTree = "<group>"; };
+		D255BE6A17DBF18D008573B3 /* Buzzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Buzzer.m; sourceTree = "<group>"; };
+		D255BE6C17DBF756008573B3 /* DirectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionView.h; sourceTree = "<group>"; };
+		D255BE6D17DBF756008573B3 /* DirectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionView.m; sourceTree = "<group>"; };
+		D255BE9617DBFA70008573B3 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		D255BE9917DBFDA4008573B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D255BE9D17DBFE4C008573B3 /* beat-indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beat-indicator.png"; sourceTree = "<group>"; };
+		D255BE9E17DBFE4C008573B3 /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
+		D255BE9F17DBFE4C008573B3 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		D255BEA017DBFE4C008573B3 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		D255BEA117DBFE4C008573B3 /* path-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "path-line.png"; sourceTree = "<group>"; };
+		D255BEA217DBFE4C008573B3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D255BE3D17DBEE43008573B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D255BE9A17DBFDA4008573B3 /* QuartzCore.framework in Frameworks */,
+				D255BE6717DBEF31008573B3 /* AudioToolbox.framework in Frameworks */,
+				D255BE4417DBEE43008573B3 /* UIKit.framework in Frameworks */,
+				D255BE4617DBEE43008573B3 /* Foundation.framework in Frameworks */,
+				D255BE4817DBEE43008573B3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D255BE3717DBEE43008573B3 = {
+			isa = PBXGroup;
+			children = (
+				D255BE4917DBEE43008573B3 /* Kovert */,
+				D255BE4217DBEE43008573B3 /* Frameworks */,
+				D255BE4117DBEE43008573B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D255BE4117DBEE43008573B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE4017DBEE43008573B3 /* Kovert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D255BE4217DBEE43008573B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE9917DBFDA4008573B3 /* QuartzCore.framework */,
+				D255BE6617DBEF31008573B3 /* AudioToolbox.framework */,
+				D255BE4317DBEE43008573B3 /* UIKit.framework */,
+				D255BE4517DBEE43008573B3 /* Foundation.framework */,
+				D255BE4717DBEE43008573B3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D255BE4917DBEE43008573B3 /* Kovert */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE5217DBEE43008573B3 /* AppDelegate.h */,
+				D255BE5317DBEE43008573B3 /* AppDelegate.m */,
+				D255BE5B17DBEE43008573B3 /* KovertViewController.h */,
+				D255BE5C17DBEE43008573B3 /* KovertViewController.m */,
+				D255BE6917DBF18D008573B3 /* Buzzer.h */,
+				D255BE6A17DBF18D008573B3 /* Buzzer.m */,
+				D255BE6C17DBF756008573B3 /* DirectionView.h */,
+				D255BE6D17DBF756008573B3 /* DirectionView.m */,
+				D255BE4A17DBEE43008573B3 /* Supporting Files */,
+				D255BE9617DBFA70008573B3 /* Globals.h */,
+			);
+			path = Kovert;
+			sourceTree = "<group>";
+		};
+		D255BE4A17DBEE43008573B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE9B17DBFE4C008573B3 /* assets */,
+				D255BE4B17DBEE43008573B3 /* Kovert-Info.plist */,
+				D255BE4C17DBEE43008573B3 /* InfoPlist.strings */,
+				D255BE4F17DBEE43008573B3 /* main.m */,
+				D255BE5117DBEE43008573B3 /* Kovert-Prefix.pch */,
+				D255BE5517DBEE43008573B3 /* Default.png */,
+				D255BE5717DBEE43008573B3 /* Default@2x.png */,
+				D255BE5917DBEE43008573B3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D255BE9B17DBFE4C008573B3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE9C17DBFE4C008573B3 /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		D255BE9C17DBFE4C008573B3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D255BE9D17DBFE4C008573B3 /* beat-indicator.png */,
+				D255BE9E17DBFE4C008573B3 /* destination.png */,
+				D255BE9F17DBFE4C008573B3 /* forward.png */,
+				D255BEA017DBFE4C008573B3 /* left.png */,
+				D255BEA117DBFE4C008573B3 /* path-line.png */,
+				D255BEA217DBFE4C008573B3 /* right.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D255BE3F17DBEE43008573B3 /* Kovert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D255BE6317DBEE43008573B3 /* Build configuration list for PBXNativeTarget "Kovert" */;
+			buildPhases = (
+				D255BE3C17DBEE43008573B3 /* Sources */,
+				D255BE3D17DBEE43008573B3 /* Frameworks */,
+				D255BE3E17DBEE43008573B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kovert;
+			productName = Kovert;
+			productReference = D255BE4017DBEE43008573B3 /* Kovert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D255BE3817DBEE43008573B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = haicontrast;
+			};
+			buildConfigurationList = D255BE3B17DBEE43008573B3 /* Build configuration list for PBXProject "Kovert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D255BE3717DBEE43008573B3;
+			productRefGroup = D255BE4117DBEE43008573B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D255BE3F17DBEE43008573B3 /* Kovert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D255BE3E17DBEE43008573B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D255BE4E17DBEE43008573B3 /* InfoPlist.strings in Resources */,
+				D255BE5617DBEE43008573B3 /* Default.png in Resources */,
+				D255BE5817DBEE43008573B3 /* Default@2x.png in Resources */,
+				D255BE5A17DBEE43008573B3 /* Default-568h@2x.png in Resources */,
+				D255BEA317DBFE4C008573B3 /* beat-indicator.png in Resources */,
+				D255BEA417DBFE4C008573B3 /* destination.png in Resources */,
+				D255BEA517DBFE4C008573B3 /* forward.png in Resources */,
+				D255BEA617DBFE4C008573B3 /* left.png in Resources */,
+				D255BEA717DBFE4C008573B3 /* path-line.png in Resources */,
+				D255BEA817DBFE4C008573B3 /* right.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D255BE3C17DBEE43008573B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D255BE5017DBEE43008573B3 /* main.m in Sources */,
+				D255BE5417DBEE43008573B3 /* AppDelegate.m in Sources */,
+				D255BE5D17DBEE43008573B3 /* KovertViewController.m in Sources */,
+				D255BE6B17DBF18D008573B3 /* Buzzer.m in Sources */,
+				D255BE6E17DBF756008573B3 /* DirectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D255BE4C17DBEE43008573B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D255BE4D17DBEE43008573B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D255BE6117DBEE43008573B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D255BE6217DBEE43008573B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D255BE6417DBEE43008573B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/SDKs/ArcGIS/iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kovert/Kovert-Prefix.pch";
+				INFOPLIST_FILE = "Kovert/Kovert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D255BE6517DBEE43008573B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/SDKs/ArcGIS/iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kovert/Kovert-Prefix.pch";
+				INFOPLIST_FILE = "Kovert/Kovert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D255BE3B17DBEE43008573B3 /* Build configuration list for PBXProject "Kovert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D255BE6117DBEE43008573B3 /* Debug */,
+				D255BE6217DBEE43008573B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D255BE6317DBEE43008573B3 /* Build configuration list for PBXNativeTarget "Kovert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D255BE6417DBEE43008573B3 /* Debug */,
+				D255BE6517DBEE43008573B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D255BE3817DBEE43008573B3 /* Project object */;
+}
