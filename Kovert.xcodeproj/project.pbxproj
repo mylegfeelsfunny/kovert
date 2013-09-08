@@ -27,6 +27,7 @@
 		D255BEA617DBFE4C008573B3 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA017DBFE4C008573B3 /* left.png */; };
 		D255BEA717DBFE4C008573B3 /* path-line.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA117DBFE4C008573B3 /* path-line.png */; };
 		D255BEA817DBFE4C008573B3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = D255BEA217DBFE4C008573B3 /* right.png */; };
+		D255BEAB17DC0480008573B3 /* DirectionContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D255BEAA17DC0480008573B3 /* DirectionContainerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		D255BEA017DBFE4C008573B3 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		D255BEA117DBFE4C008573B3 /* path-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "path-line.png"; sourceTree = "<group>"; };
 		D255BEA217DBFE4C008573B3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		D255BEA917DC0480008573B3 /* DirectionContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionContainerView.h; sourceTree = "<group>"; };
+		D255BEAA17DC0480008573B3 /* DirectionContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		D255BE4917DBEE43008573B3 /* Kovert */ = {
 			isa = PBXGroup;
 			children = (
+				D255BE9617DBFA70008573B3 /* Globals.h */,
 				D255BE5217DBEE43008573B3 /* AppDelegate.h */,
 				D255BE5317DBEE43008573B3 /* AppDelegate.m */,
 				D255BE5B17DBEE43008573B3 /* KovertViewController.h */,
@@ -116,8 +120,9 @@
 				D255BE6A17DBF18D008573B3 /* Buzzer.m */,
 				D255BE6C17DBF756008573B3 /* DirectionView.h */,
 				D255BE6D17DBF756008573B3 /* DirectionView.m */,
+				D255BEA917DC0480008573B3 /* DirectionContainerView.h */,
+				D255BEAA17DC0480008573B3 /* DirectionContainerView.m */,
 				D255BE4A17DBEE43008573B3 /* Supporting Files */,
-				D255BE9617DBFA70008573B3 /* Globals.h */,
 			);
 			path = Kovert;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				D255BE5D17DBEE43008573B3 /* KovertViewController.m in Sources */,
 				D255BE6B17DBF18D008573B3 /* Buzzer.m in Sources */,
 				D255BE6E17DBF756008573B3 /* DirectionView.m in Sources */,
+				D255BEAB17DC0480008573B3 /* DirectionContainerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +362,7 @@
 				D255BE6517DBEE43008573B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "Buzzer.h"
 #import "DirectionView.h"
+#import "DirectionContainerView.h"
 
 @interface KovertViewController () {
 
@@ -19,22 +20,47 @@
 
 @implementation KovertViewController
 
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-//    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-   
+    
+    NSArray *indicatorArray = [NSArray arrayWithObjects:
+                      [NSDictionary dictionaryWithObjectsAndKeys:
+                       [NSNumber numberWithInt:DirectionViewArrived], @"type", nil]
+                     
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                       [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewRight], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewRight], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
+
+                      ,[NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                      
+                      , nil];
+    
     //[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(buzz) userInfo:nil repeats:YES];
     //[[Buzzer current] buzzForRight];
+    DirectionContainerView *dc = [[DirectionContainerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - [DirectionView height]) * .5, 0, 0, [DirectionView height])
+                                                                      andArray:indicatorArray];
+    [self.view addSubview:dc];
     
-    DirectionView *directionView;
-    for (int i = 0; i < 3; i++) {
-        directionView = [[DirectionView alloc] initWithFrame:CGRectMake(0, i * 70 + (i * 100), 70, 70) andType:i];
-        [self.view addSubview:directionView];
-        directionView.backgroundColor = [UIColor whiteColor];
-    }
-    
+    [dc increment];
 }
 
 - (void)buzz {

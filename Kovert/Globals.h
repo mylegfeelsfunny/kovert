@@ -10,3 +10,6 @@
 
 
 #define kMAXY 30
+
+#define kAddressNum     @"685"
+#define kAddressStreet  @"ELLIS ST"

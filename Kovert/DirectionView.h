@@ -17,6 +17,9 @@ typedef enum {
 
 @interface DirectionView : UIView
 
++ (CGFloat)height;
+
 - (id)initWithFrame:(CGRect)frame andType:(DirectionViewType)type;
+- (void)broadCast;
 
 @end
