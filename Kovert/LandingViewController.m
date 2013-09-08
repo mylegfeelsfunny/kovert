@@ -8,6 +8,7 @@
 
 #import "LandingViewController.h"
 #import "KovertViewController.h"
+#import "Buzzer.h"
 
 @interface LandingViewController () {
     @private
@@ -43,6 +44,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     _imageTwoButton.hidden = YES;
     _imageTwoButton.enabled = NO;
+
+    [[Buzzer current] kill];
 }
 
 - (void)didReceiveMemoryWarning {

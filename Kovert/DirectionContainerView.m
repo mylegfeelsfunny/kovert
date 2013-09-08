@@ -86,7 +86,7 @@
 
 - (void)kill{
     _indicatorsArray = nil;
-    _currentIndex = 0;
+    _currentIndex = 1000;
     for (CALayer* layer in [self.layer sublayers]) {
         [layer removeAllAnimations];
     }
