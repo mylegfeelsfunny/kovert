@@ -79,4 +79,9 @@
     [self buzzWithIncrement];
 }
 
+- (void)kill {
+    [_timer invalidate];
+    _timer = nil;
+}
+
 @end

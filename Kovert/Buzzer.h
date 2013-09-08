@@ -12,6 +12,7 @@
 
 + (Buzzer *)current;
 
+- (void)kill;
 - (void)buzzForRight;
 - (void)buzzForLeft;
 - (void)buzzForStraight;

@@ -31,30 +31,31 @@
                       [NSDictionary dictionaryWithObjectsAndKeys:
                        [NSNumber numberWithInt:DirectionViewArrived], @"type", nil]
                      
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                       [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewRight], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewRight], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
-
-                      ,[NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
-                      
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewRight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewStraight], @"type", nil]
+                       
+                       ,[NSDictionary dictionaryWithObjectsAndKeys:
+                         [NSNumber numberWithInt:DirectionViewLeft], @"type", nil]
+                               
+                               
                       , nil];
     
     _directionContainerView = [[DirectionContainerView alloc] initWithFrame:CGRectMake(180, 0, 0, [DirectionView height])
@@ -96,6 +97,7 @@
 
 - (void)popViewController:(id)sender {
     [_directionContainerView kill];
+    [[Buzzer current] kill];
 
     [self.navigationController popViewControllerAnimated:YES];
 }
